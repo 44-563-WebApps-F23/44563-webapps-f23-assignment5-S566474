@@ -63,37 +63,38 @@
             </tr>
         </thead>
         <tbody>
-            <tr>
+            <tr class="table table-primary table-striped">
                 <th scope="row">T</th>
                 <td>Texas</td>
                 <td>Tapi river</td>
                 <td>Tulip</td>
             </tr>
-            <tr>
+            
+            <tr class="table-secondary">
                 <th scope="row">H</th>
                 <td>Hasyville</td>
                 <td>Hughes River</td>
                 <td>Hemlock</td>
             </tr>
-            <tr>
+            <tr class="table-warning">
                 <th scope="row">O</th>
                 <td>Ooty</td>
                 <td>Oatka Creek</td>
                 <td>Olive</td>
             </tr>
-            <tr>
+            <tr class="table-info">
                 <th scope="row">T</th>
                 <td>Taiwan</td>
                 <td>Tacoosh</td>
                 <td>Tamarind</td>
             </tr>
-            <tr>
+            <tr class="table-danger">
                 <th scope="row">A</th>
                 <td>Araku</td>
                 <td>Aberjona</td>
                 <td>Apple</td>
             </tr>
-            <tr>
+            <tr class="table-success">
                 <th scope="row">S</th>
                 <td>Srisailam</td>
                 <td>Sabine</td>
@@ -103,28 +104,46 @@
     </table>
 </div>
 
-<div class="container">
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <span class="navbar-brand">Button Groups</span>
-  </nav>
-
-  <div class="btn-toolbar" role="toolbar">
-      <div class="btn-group mr-2" role="group">
-          <span class="btn btn-success">T</span>
-          <span class="btn btn-success">H</span>
-          <span class="btn btn-success">O</span>
-      </div>
-  
-      <div class="btn-group mr-2" role="group">
-          <span class="btn btn-warning">T</span>
-          <span class="btn btn-warning">A</span>
-      </div>
-
-      <div class="btn-group" role="group">
-          <span class="btn btn-danger">S</span>
-      </div>
-  </div>
+<div class="btn-toolbar">
+    <div button="" type="button" class="btn btn-success">
+        <button type="button" class="btn">S</button>
+        <button type="button" class="btn">A</button>
+        <button type="button" class="btn">O</button>
+    </div>
+    <div button="" type="button" class="btn btn-warning">
+        <button type="button" class="btn">T</button>
+        <button type="button" class="btn">H</button>
+    </div>
+    <div button="" type="button" class="btn btn-danger">
+        <button type="button" class="btn">T</button>
+    </div>
 </div>
+<br>
+<div class="Dropdown">
+    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="true">Click on Dropdown </button>
+    <ul class="dropdown-menu">
+      <li><a class="dropdown-item" href="basic.html">Basic Html</a></li>
+      <li><a class="dropdown-item" href="advanced.html">Adavanced Html</a></li>
+    </ul>
+  </div>
+  <form>
+    <div class="form-group">
+      <label for="EmailLogin">Email address</label>
+      <input type="email" class="form-control" id="Email" aria-describedby="emailaddress" placeholder="Enter your email address">
+      <small id="emailaddress" class="form-text text-muted">We wont share your email with anyone.</small>
+    </div>
+    <div class="form-group">
+      <label for="city">City</label>
+      <input type="text" class="form-control" id="city" placeholder="Enter your city">
+    </div>
+    <div class="form-check">
+      <input type="checkbox" class="form-check-input" id="checkin">
+      <label class="form-check-label" for="Checkin">Sign up for newsletter?</label>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+</body>
+</html>
 
 </body>
 </html>
