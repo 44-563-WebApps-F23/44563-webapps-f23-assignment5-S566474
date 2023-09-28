@@ -36,19 +36,24 @@
     <p>
         Cities are breaken first when size is reduced<br>
     </p>
-  
-  <div class="container">
-    <h2>City Images</h2>
-        <img src="Texas.jpg" alt="Image of Teaxs" class="img-fluid" style="width: 300px; height: 200px;">
-        <img src="Hasyville.jpg" alt="Image of Hasyville" class="img-fluid" style="width: 300px; height: 200px;">
-        <img src="Ooty.jpg" alt="Image of Ooty" class="img-fluid" style="width: 300px; height: 200px;">
-  </div>
-  <br>
-  <div class="container">
-        <img src="Taiwan.jpg" alt="Image of Taiwan" class="img-thumbnail" style="width: 300px; height: 200px;">
-        <img src="Araku.jpg" alt="Image of Araku" class="img-thumbnail" style="width: 300px; height: 200px;">
-        <img src="Srisailam.jpg" alt="Image of Srisailam" class="img-thumbnail" style="width: 300px; height: 200px;">
-  </div>
+    
+    <div>
+      <h3>City Images</h3>
+      </div>
+    <div class="container flex-row d-flex gap-2">
+      <img src="Texas.jpg" class="img-fluid" width="400" height="400" alt="Lucknow">
+      <img src="Hasyville.jpg" class="img-fluid" width="400" height="400"alt="Austin">
+      <img src="Ooty.jpg" class="img-fluid" width="400" height="400" alt="Mexico">
+    </div>
+      <div>
+      <h3>thumbnails</h3>
+      </div>
+      <div class="container flex-row d-flex gap-2">
+      <img src="Taiwan.jpg" class="img-thumbnail" width="400" height="400" alt="Lucknow">
+      <img src="Araku.jpg" class="img-thumbnail" width="400" height="400" alt="Austin">
+      <img src="Srisailam.jpg" class="img-thumbnail" width="400" height="400" alt="Mexico">
+    </div>
+    <table class="table table-hover table-bordered table-sm table-striped-columns">
   <br>
   <div class="container">
     <table class="table">
@@ -120,30 +125,54 @@
 </div>
 <br>
 <div class="Dropdown">
-    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="true">Click on Dropdown </button>
-    <ul class="dropdown-menu">
-      <li><a class="dropdown-item" href="basic.html">Basic Html</a></li>
-      <li><a class="dropdown-item" href="advanced.html">Adavanced Html</a></li>
-    </ul>
+  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="true">Click on Dropdown </button>
+  <ul class="dropdown-menu">
+    <li><a class="dropdown-item" href="basic.html">Basic Html</a></li>
+    <li><a class="dropdown-item" href="advanced.html">Adavanced Html</a></li>
+  </ul>
+</div>
+<form>
+  <div class="form-group">
+    <label for="EmailLogin">Email address</label>
+    <input type="email" class="form-control" id="Email" aria-describedby="emailaddress" placeholder="Enter your email address">
+    <small id="emailaddress" class="form-text text-muted">We wont share your email with anyone.</small>
   </div>
-  <form>
-    <div class="form-group">
-      <label for="EmailLogin">Email address</label>
-      <input type="email" class="form-control" id="Email" aria-describedby="emailaddress" placeholder="Enter your email address">
-      <small id="emailaddress" class="form-text text-muted">We wont share your email with anyone.</small>
-    </div>
-    <div class="form-group">
-      <label for="city">City</label>
-      <input type="text" class="form-control" id="city" placeholder="Enter your city">
-    </div>
-    <div class="form-check">
-      <input type="checkbox" class="form-check-input" id="checkin">
-      <label class="form-check-label" for="Checkin">Sign up for newsletter?</label>
-    </div>
-    <button type="submit" class="btn btn-primary">Submit</button>
-  </form>
-</body>
-</html>
-
+  <div class="form-group">
+    <label for="city">City</label>
+    <input type="text" class="form-control" id="city" placeholder="Enter your city">
+  </div>
+  <div class="form-check">
+    <input type="checkbox" class="form-check-input" id="checkin">
+    <label class="form-check-label" for="Checkin">Sign up for newsletter?</label>
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+<br>
+<div class="card-group">
+  <div class="card">
+    <img class="card-img-top" src="Texas.jpg" width="300" height="300" alt="Lucknow">
+    <div class="card-body"><h2>Texas</h2>
+    <p class="card-text">Texas, constituent state of the United States of America.<br>
+      It became the 28th state of the union in 1845. </p>
+   <a class="btn btn-primary" href="https://en.wikipedia.org/wiki/Texas">Read More</a>
+  </div>
+  </div>
+  <div class="card">
+    <img class="card-img-top" src="Araku.jpg" width="300" height="300" alt="Austin">
+    <div class="card-body"><h2>Araku</h2>
+    <p class="card-text">Araku Valley is a hill station in Alluri Sitharama Raju district <br>
+      in the Indian state of Andhra Pradesh, lying 111 km west of Visakhapatnam city.</p>
+    <a class="btn btn-primary" href="https://en.wikipedia.org/wiki/Araku">Read More</a>
+  </div>
+  </div>
+  <div class="card">
+    <img class="card-img-top" src="Srisailam.jpg" width="300" height="300" alt="Mexico">
+    <div class="card-body"><h2>Srisailam</h2>
+    <p class="card-text">Srisailam is a census town in Nandyal district of the Indian state of Andhra Pradesh. <br>
+      It is the mandal headquarters of Srisailam mandal in Atmakur revenue division.</p>
+    <a class="btn btn-primary" href="https://en.wikipedia.org/wiki/Srisailam">Read More</a>
+  </div>
+  </div>
+</div>
 </body>
 </html>
